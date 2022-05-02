@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title rel="stylesheet">kvdrdo-unofficial</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="webjs/index.js"></script>
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <meta name="google-signin-client_id" content="613459978793-p8fcr2vp3k6mifg9ulhcllfs45l0as2p.apps.googleusercontent.com">
+    </head>
+    <body>
+        <section>
+            <div class="fakeHeader"></div>
+            <div class="redcircle"></div>
+            <div class="oracircle"></div>
+            <div class="purpcircle"></div>
+            <header>
+                <a href="#"><img src=""  class="logo"></a>
+                <ul>
+                    <a href="#"><li>Home</li></a>
+                    <a href="chat.html"><li>Chat</li></a>
+                    <a href="#"><li>News</li></a>
+                    <!-- <a class="loginB" href="/login.html">Login</a> -->
+                    <a class="signinB" href="#" onclick="signOut();localStorage.clear();">Sign out</a>
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>It's not just a<a class="invert">ny news</a><br>
+                    It's <span>KV DRDO</span><br> news</h2>
+                    <div class="g-signin2" data-onsuccess="onSignIn">Google Signin enable javascript to signin</div><br><article>Dont worry you need not to signin to chat but if u want to use a name in the chat you need to signin on not signing in you ur name will be set to something random</article>
+                    <p>We also have a full school chat section on our website, an about us <br>section and memes section make sure to read the rules before chatting or posting news</p>
+                    <a class="button" href="#">Go to news page</a>
+                </div>
+                <div class="imgBox">
+                    <img id="imgBox" src="images/parker.png" class="starbucks">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="images/home-icon.png" onclick="imgSlider('images/parker.png');changeCircleColor('#a70000');"></li>
+                <li><img src="images/book-icon.png"onclick="imgSlider('images/book.png');changeCircleColor('#fa7610')"></li>
+                <li><img src="images/info-icon.png"onclick="imgSlider('images/img3.png');changeCircleColor('#8c198c')"></li>
+            </ul>
+        </section>
+    </body>
+    <div class="columns">
+        <article class="card">
+          <a href="https://chat-test-2007.netlify.app"><h3 class="card__title">Chat Section</h3></a>
+          <p>On this website we have a chat seciton and 
+            not any ordinary chat section you can literally chat with
+            the whole school just put your name (not irl one obviously)
+            and start chatting.
+          </p>
+        </article>
+        <article class="card">
+            
+            <a href="#"><h3 class="card__title">Chat Section</h3></a>
+          <p>Repudiandae corporis voluptatibus praesentium sequi.</p>
+        </article>
+        <article class="card">
+          <a href="#"><h3 class="card__title">Chat Section</h3></a>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore, sint. Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+        </article>
+      </div>
+</html>
